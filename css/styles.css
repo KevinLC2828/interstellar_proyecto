@@ -102,11 +102,31 @@ body{
     text-align: center;
 }
 
-.gallery-container{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+.slideshow-container{
+
+    position: relative;
+
+    width: 60%;
+    max-width: 600px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.slide{
+
+    width: 100%;
+
+    display: none;
+
+    border-radius: 15px;
+}
+
+.slide.active{
+    display: block;
 }
 
 .gallery-container img{
